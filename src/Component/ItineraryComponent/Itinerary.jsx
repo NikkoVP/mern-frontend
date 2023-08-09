@@ -19,7 +19,7 @@ const Itinerary = () => {
     // Function to fetch the data for the place based on the URL parameter
     const fetchPlaceData = async () => {
       try {
-        const response = await fetch(`http://localhost:3000/showPlace?place=${place}`);
+        const response = await fetch(`https://wanderlist-backend.onrender.com/showPlace?place=${place}`);
         if (response.ok) {
           const { data } = await response.json();
           // Find the place data that matches the specified 'place' parameter

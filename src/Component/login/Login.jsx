@@ -36,7 +36,7 @@ function Login() {
         if (username != '' && password != '') {
             try {
                 // Send login request to the server
-                const response = await fetch('http://127.0.0.1:3000/login', {
+                const response = await fetch('https://wanderlist-backend.onrender.com/login', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
@@ -51,7 +51,7 @@ function Login() {
                     const { token } = data;
                     localStorage.setItem('token', token);
 
-                    fetch('http://127.0.0.1:3000/protected', {
+                    fetch('https://wanderlist-backend.onrender.com/protected', {
                         method: 'GET',
                         headers: {
                             'Content-Type': 'application/json',

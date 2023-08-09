@@ -17,7 +17,7 @@ function Register() {
 
     // GET THE USERS
     const fetchData = async () => {
-        const response = await fetch(`http://127.0.0.1:3000/users`)
+        const response = await fetch(`https://wanderlist-backend.onrender.com/users`)
         const { data } = await response.json();
         setUserList(data)
     };
@@ -62,7 +62,7 @@ function Register() {
             console.log(user)
             if (user.length === 0) {
 
-                fetch('http://127.0.0.1:3000/register', {
+                fetch('https://wanderlist-backend.onrender.com/register', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',

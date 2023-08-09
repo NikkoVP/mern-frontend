@@ -41,14 +41,14 @@ function HomePage() {
 
   const fetchData = async () => {
 
-    const response = await fetch(`http://127.0.0.1:3000/users`)
+    const response = await fetch(`https://wanderlist-backend.onrender.com/users`)
     const { data } = await response.json();
     setDisplayName(data)
   };
 
   const fetchDataPlace = async () => {
 
-    const response = await fetch(`http://127.0.0.1:3000/showPlace`)
+    const response = await fetch(`https://wanderlist-backend.onrender.com/showPlace`)
     const { data } = await response.json();
     setPlaceData(data);
 
@@ -97,7 +97,7 @@ function HomePage() {
       }
       if (checkPlace.length === 0) {
 
-        fetch('http://127.0.0.1:3000/addPlace', {
+        fetch('https://wanderlist-backend.onrender.com/addPlace', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -127,7 +127,7 @@ function HomePage() {
 
   // HANDLE DELETE
   const handleDelete = (id) => () => {
-    fetch(`http://127.0.0.1:3000/deletePlace/${id}`, {
+    fetch(`https://wanderlist-backend.onrender.com/deletePlace/${id}`, {
       method: 'DELETE',
     })
       .then((response) => response.text())

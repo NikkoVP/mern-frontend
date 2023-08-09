@@ -16,7 +16,7 @@ const Todo = ({ todos, onDelete, onUpdate,}) => {
       onUpdate(updatedTodos);
 
       // Send the API request to update the completed status in the backend
-      await fetch(`http://localhost:3000/todos/${_id}`, {
+      await fetch(`https://wanderlist-backend.onrender.com/todos/${_id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',

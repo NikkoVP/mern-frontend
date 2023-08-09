@@ -62,7 +62,7 @@ function Login() {
                         .then((response) => response.json())
                         .then((data) => {
                             localStorage.setItem('UserID', data);
-                            window.location.href = '/Homepage';
+                            window.location.href = '/homepage';
                         
                         })
                         .catch((error) => {

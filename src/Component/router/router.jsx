@@ -22,11 +22,6 @@ const router = createBrowserRouter([
         element:<Register/>
     },
     {
-        path:'/home',
-        element:<HomePage/>
-    },
-
-    {
         path:'/todos/:place',
         element:<Itinerary/>
     }

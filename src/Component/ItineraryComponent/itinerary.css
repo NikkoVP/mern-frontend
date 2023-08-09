@@ -1,0 +1,31 @@
+/* itinerary.css */
+
+/* Styling for the container */
+.itinerary-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: "Inter", sans-serif;
+  color: #050f06;
+
+ 
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+
+/* Styling for the heading */
+.itinerary-heading {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Styling for each day heading */
+.itinerary-day {
+  font-size: 24px;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  text-align: left;
+}

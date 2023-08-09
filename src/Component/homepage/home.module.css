@@ -1,0 +1,285 @@
+@media (min-width: 320px) {
+  body {
+    background-color: #ffffff;
+
+    /* font: 12px/30px "Lucida Grande", "Lucida Sans Unicode", Arial, Helvetica, Verdana, sans-serif; */
+    font-family: "Inter", sans-serif;
+    color: #050f06;
+  }
+
+  #header {
+    opacity: 1;
+    font-size: 25px;
+    color: white;
+    
+  }
+
+  #container {
+    display: grid;
+    place-items: center;
+  }
+
+  #addPlace {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  #list {
+
+    text-align: center;
+  }
+
+  #yourPlace {
+    box-shadow: 5px 5px 5px #919191;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid #2cc686;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    margin: 5px;
+    background-color: white;
+  }
+
+  #flexMap {
+    display: flexbox;
+   
+    place-items: center;
+    justify-content: center;
+    width: 93%;
+    text-align: center;
+    align-items: center;
+  }
+
+  h2 {
+    text-align: center;
+    
+  }
+
+  #line {
+    width: 100%;
+    border: 1px solid black;
+    margin: 5px;
+  }
+
+  #link {
+    text-decoration: none;
+    color: #050f06;
+    font-size: 55px;
+  }
+
+  #link:hover {
+    position: relative;
+    top: -3px;
+    background-color: #fff;
+    border-radius: 13px;
+    transition: 1.5s;
+  }
+
+  #buttonSubmit {
+    background-color: #2cc686;
+    height: 5vh;
+    margin: 5px;
+    text-transform: uppercase;
+    width: 70%;
+    border-radius: 5px;
+    font-size: 15px;
+    color: #f3f3f3;
+    border: 1px solid black;
+  }
+
+  #buttonSubmit:hover {
+    transition: 3s;
+    position: relative;
+    bottom: 15px;
+  }
+
+  /* BUTTONs */
+  #editButton,
+  #deleteButton,
+  #seeTodoButton {
+    height: 55px;
+    width: 55px;
+    border-radius: 15px;
+    margin: 5px;
+    cursor: pointer;
+  }
+
+  #editButton {
+    color: green;
+  }
+
+  #editButton:hover {
+
+    background-color: #2cc686;
+    color: #fff;
+    transition: .5s;
+  }
+
+  #deleteButton {
+    color: #ff4d4d;
+  }
+
+  #deleteButton:hover {
+    background-color: #ff0000;
+    color: #fff;
+    transition: .5s;
+  }
+
+  #seeTodoButton {
+    color: #0c0c0c;
+  }
+
+  #seeTodoButton:hover {
+    background-color: #2cc686;
+    color: #fff;
+  }
+}
+
+/* C  O M  P  U T  E R       V  I E W */
+
+@media (min-width: 1200px) {
+  #header {
+    background-color: transparent;
+    opacity: 1;
+    color: white;
+    width: 95%;
+    box-shadow: 2px 2px 2px #919191;
+    height: 50px;
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+    margin: 35px;
+    font-size: 50px;
+    justify-content: space-between;
+  }
+
+
+  #container {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    background-color: transparent;
+    font-size: 30px;
+    
+  }
+
+  #form {
+    justify-content: center;
+    align-items: center;
+    width: 480px;
+    background-color: #f9f9f9;
+    box-shadow: 20px 10px 20px 10px #919191;
+    border: 1px solid #2cc686;
+    position: fixed;
+    top: 210px;
+    right: 55px;
+    border-radius: 10px;
+    margin-right: 8rem;
+  }
+
+  #line {
+    opacity: 0;
+  }
+
+  #list {
+    width: 600vw;
+    border: 1px solid #919191;
+    margin: 20px;
+    margin-left: 50px;
+    display: grid;
+    place-items: center;
+    box-shadow: 2px 2px 2px black;
+    background-image: url('/images/background.png');
+    background-size: cover;
+  }
+  
+
+
+  #flexMap {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    place-items: center;
+    justify-content: space-evenly;
+    width: 60%;
+    text-align: center;
+    align-items: center;
+  }
+
+  #yourPlace {
+    box-shadow: 5px 5px 5px #919191;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid #2cc686;
+    margin: 5px;
+    background-color: white;
+    width: 15rem;
+  }
+
+  #buttonSubmit {
+    background-color: #bee6e9;
+    height: 5vh;
+    margin: 5px;
+    text-transform: uppercase;
+    width: 5vw;
+    border-radius: 5px;
+    font-size: 15px;
+    border: 1px solid #bee6e9;
+
+    color: #050f06;
+  }
+
+  #buttonSubmit:hover {
+    transition: 1.5s;
+    position: relative;
+    bottom: 5px;
+  }
+
+  #editButton,
+  #deleteButton,
+  #seeTodoButton {
+    height: 55px;
+    width: 55px;
+    border-radius: 15px;
+    margin: 5px;
+    cursor: pointer;
+  }
+
+  #editButton {
+    color: green;
+  }
+
+  #editButton:hover {
+
+    background-color: #2cc686;
+    color: #fff;
+    transition: .5s;
+  }
+
+  #deleteButton {
+    color: #ff4d4d;
+  }
+
+  #deleteButton:hover {
+    background-color: #ff0000;
+    color: #fff;
+    transition: .5s;
+  }
+
+  #seeTodoButton {
+    color: #0c0c0c;
+  }
+
+  #seeTodoButton:hover {
+    background-color: #2cc686;
+    color: #fff;
+  }
+}

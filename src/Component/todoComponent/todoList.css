@@ -1,0 +1,60 @@
+/* todoList.css */
+
+/* Styling for the TodoList container */
+.todo-list-container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+/* Styling for the TodoList heading */
+.todo-list-heading {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Styling for the "Add Todo" button */
+button {
+  padding: 8px 16px;
+  background-color: #bee6e9;
+  color: #0c0808;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Styling for the "Add Todo" container */
+.add-todo-container {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.add-todo-container select,
+.add-todo-container input {
+  margin-right: 10px;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.add-todo-container button {
+  margin-right: 10px;
+}
+
+/* Styling for the "No todos found" message */
+p {
+  font-size: 16px;
+  font-style: italic;
+  color: #888;
+}

@@ -1,0 +1,100 @@
+
+
+body {
+  background-color: #ffffff;
+  font-family: "Inter", sans-serif;
+  color: #050f06;
+}
+
+/* todo.css */
+
+/* Styling for the entire Todo component */
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Styling for each individual Todo item */
+.todo-item {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* todo.css */
+
+/* Styling for the checkbox input */
+/* todo.css */
+
+/* Styling for the checkbox input */
+.todo-item input[type="checkbox"] {
+  /* Increase the size of the checkbox */
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+
+  /* Hide the default checkbox appearance */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  border: 2px solid #333;
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+
+  /* Add a custom checkmark using a pseudo-element (span) */
+}
+.todo-item input[type="checkbox"]::before {
+  content: '';
+  display: block;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #007bff; /* Checkbox tick color for completed tasks */
+  border-radius: 2px;
+  opacity: 0; /* Hide the tick by default */
+}
+.todo-item input[type="checkbox"]:checked::before {
+  opacity: 1; /* Show the tick when the checkbox is checked (completed) */
+}
+
+
+
+/* Styling for the time and task spans */
+.todo-time {
+  font-size: 14px;
+  color: #666;
+  margin-right: 10px;
+}
+
+.todo-task {
+  flex: 1;
+  font-size: 16px;
+  color: #050f06;
+}
+/* Add style for completed task */
+.completed-task {
+  text-decoration: line-through;
+  color: #126425; /* You can adjust the color for completed tasks */
+}
+
+/* Styling for the delete button */
+.delete-button {
+  padding: 6px 12px;
+  background-color: #bee6e9;
+  color: #130606;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.delete-button:hover {
+  background-color: #e82674;
+}
